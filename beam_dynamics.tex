@@ -1,0 +1,53 @@
+\documentclass[book]{jlreq}
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{bm}
+
+%\renewcommand{\today}{\the\year/\the\month/\the\day}
+%\renewcommand{\contentsname}{Contents}
+%\renewcommand{\refname}{References}
+\renewcommand{\figurename}{Fig.~}
+\renewcommand{\tablename}{Table~}
+
+\begin{document}
+\title{Beam Dynamics}
+\author{Shin-ichi YOSHIMOTO}
+\maketitle
+\tableofcontents
+\clearpage
+
+\part{数学的準備}
+\chapter{微分形式}
+\section{外形式}
+\subsection{1-形式 (線形汎関数)}
+線型汎函数(linear functional)は、ベクトル空間からその係数体への線型写像をいう。線型形式(linear form)若しくは一次形式(one-form)あるいは余ベクトル(covector)ともいう。
+
+線形(汎)関数$\omega:\mathbf{R^n} \rightarrow\mathbf{R},\quad
+\forall\lambda_1,\;\lambda_2 \in \mathbf{R},\quad\bm{\xi}_1,\;\bm{\xi}_2 \in \mathbf{R}^n$
+%
+\begin{equation}
+    \omega(\lambda_1\bm{\xi}_1+\lambda_2\bm{\xi}_2)= \lambda_1\omega(\bm{\xi}_1)+\lambda_2\omega(\bm{\xi}_2)
+\end{equation}
+%
+\subsection{2-形式}
+$\omega^2:\mathbf{R}^n\times\mathbf{R}^n \rightarrow\mathbf{R},\quad
+\forall\lambda_1,\;\lambda_2 \in \mathbf{R},\quad\bm{\xi}_1,\;\bm{\xi}_2,\;\bm{\xi}_3 \in \mathbf{R}^n$
+%
+\begin{align}
+    \omega^2(\lambda_1\bm{\xi}_1+\lambda_2\bm{\xi}_2,\bm{\xi_3})
+    &= \lambda_1\omega^2(\bm{\xi}_1,\bm{\xi_3})+\lambda_2\omega^2(\bm{\xi}_2,\bm{\xi_3})\\
+    \omega^2(\bm{\xi}_1,\bm{\xi_2})&=-\omega^2(\bm{\xi}_2,\bm{\xi_1})
+\end{align}
+
+\subsection{k-形式}
+\subsubsection{p-形式}
+\paragraph{外積}
+\subparagraph{微分形式}
+%
+\begin{thebibliography}{9}
+    \bibitem{Arnold}
+    アーノルド, 古典力学の数学的方法, 岩波書店, 2003
+\end{thebibliography}
+%
+\end{document}
