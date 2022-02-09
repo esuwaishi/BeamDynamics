@@ -1,2 +1,2 @@
-# BeamDynamics
+# Beam Dynamics
 Beam Dynamics
